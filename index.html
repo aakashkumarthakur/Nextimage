@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+<title>NextImage — Convert &amp; Resize Images Instantly</title>
+<meta name="description" content="Convert and resize JPG, PNG and WebP images instantly in your browser. Free, fast and private image converter."/>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<header class="site-header">
+  <div class="nav-container">
+    <a class="logo" href="#home"><span class="logo-mark"><i class="ri-image-2-fill"></i></span>Nextimage</a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#converter">Converter</a>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <div class="nav-cta"><a class="btn btn-primary" href="#converter">Start converting</a></div>
+    </nav>
+    <button aria-label="Toggle menu" class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <span class="section-tag">Free &amp; Private In-Browser Tool</span>
+      <h1>Convert &amp; Resize Images <em>Instantly</em></h1>
+      <p>Turn JPG into PNG, PNG into WebP, and resize any photo in seconds — right inside your browser. No uploads to a server, no waiting, no watermarks.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#converter"><i class="ri-upload-cloud-2-line"></i> Convert an Image</a>
+        <a class="btn btn-outline" href="#how">How it Works</a>
+      </div>
+      <div class="hero-stats">
+        <div><h3>100%</h3><span>Private &amp; Client-Side</span></div>
+        <div><h3>3</h3><span>Formats Supported</span></div>
+        <div><h3>0<i class="ri-currency-line"></i></h3><span>Cost, Ever</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Converter Tool ===== -->
+  <section class="converter-section" id="converter">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">The Converter</span>
+        <h2>Upload, Resize &amp; Convert</h2>
+        <p>Drop your images below. Choose an output format and, optionally, new dimensions, then download the result.</p>
+      </div>
+
+      <div class="converter-card">
+        <div class="drop-zone" id="dropZone">
+          <i class="ri-upload-cloud-2-line drop-icon"></i>
+          <h3>Drag &amp; drop images here</h3>
+          <p>or click to browse — JPG, PNG and WebP supported</p>
+          <input accept="image/*" id="fileInput" multiple type="file"/>
+        </div>
+
+        <div class="converter-toolbar visually-hidden" id="toolbar">
+          <p><span id="fileCount">0</span> image(s) loaded</p>
+          <a class="btn btn-outline btn-sm" id="clearAllBtn"><i class="ri-delete-bin-line"></i> Clear All</a>
+        </div>
+
+        <div class="image-list" id="imageList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Why ImageForge</span>
+        <h2>Built to Be Fast, Simple &amp; Safe</h2>
+        <p>Everything happens locally on your device using your browser's canvas engine.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="ic"><i class="ri-shield-check-line"></i></div>
+          <h4>100% Private</h4>
+          <p>Images never leave your device. All conversion happens locally in your browser.</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic"><i class="ri-flashlight-line"></i></div>
+          <h4>Instant Results</h4>
+          <p>No upload queues or server waits — conversions finish in a fraction of a second.</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic"><i class="ri-shape-line"></i></div>
+          <h4>Multiple Formats</h4>
+          <p>Convert freely between JPG, PNG and WebP with adjustable quality.</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic"><i class="ri-crop-line"></i></div>
+          <h4>Smart Resizing</h4>
+          <p>Set exact dimensions or keep the original aspect ratio automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How it works ===== -->
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Process</span>
+        <h2>How It Works</h2>
+        <p>Three simple steps, no signup required.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-step">
+          <div class="num">1</div>
+          <h4>Upload</h4>
+          <p>Drag &amp; drop or select one or more JPG, PNG or WebP images.</p>
+        </div>
+        <div class="how-step">
+          <div class="num">2</div>
+          <h4>Customize</h4>
+          <p>Pick your target format, quality and, if needed, new width or height.</p>
+        </div>
+        <div class="how-step">
+          <div class="num">3</div>
+          <h4>Download</h4>
+          <p>Convert and download your image instantly — nothing is stored or uploaded.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">FAQ</span>
+        <h2>Common Questions</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <div class="faq-q">Is my image uploaded to a server? <i class="ri-add-line faq-icon"></i></div>
+          <div class="faq-a">No. Every conversion happens locally in your browser using the Canvas API — your files never leave your device.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Which formats can I convert between? <i class="ri-add-line faq-icon"></i></div>
+          <div class="faq-a">You can convert between JPG, PNG and WebP in any direction, and resize the image at the same time.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Will resizing reduce image quality? <i class="ri-add-line faq-icon"></i></div>
+          <div class="faq-a">Reducing dimensions is lossless in terms of sharpness for the new size. For JPG/WebP you can also control the compression quality with the slider.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is this tool free to use? <i class="ri-add-line faq-icon"></i></div>
+          <div class="faq-a">Yes, completely free with no limits on the number of images you convert.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-section">
+        <h2>Ready to convert your images?</h2>
+        <p>No signup. No watermark. No catch.</p>
+        <a class="btn btn-primary" href="#converter"><i class="ri-upload-cloud-2-line"></i> Get Started for Free</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#home"><span class="logo-mark"><i class="ri-image-2-fill"></i></span>Nextimage</a>
+        <p>A free, private, browser-based tool to convert and resize your images in seconds.</p>
+        <div class="footer-social">
+          <a href="https://github.com/aakashkumarthakur"><i class="ri-github-fill"></i></a>
+          <a href="https://wa.me/+9779822007490" class="social-btn" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          <a href="https://www.instagram.com/codeeaakash?igsh=MW45Y2F2aThvNnBpNw%3D%3D&utm_source=qr"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Tool</h5>
+        <ul>
+          <li><a href="#converter">Converter</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How It Works</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Formats</h5>
+        <ul>
+          <li>JPG to PNG</li>
+          <li>PNG to WebP</li>
+          <li>Image Resizing</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="mailto:hello@example.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &#169; <span id="year"></span> Nextimage. Built by <a href="https://thakuraakash.com.np/">Aakash Thakur</a>.
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
